@@ -1,4 +1,4 @@
-import webbrowser
+import webbrowser as wb
 import requests
 import pyttsx3
 import speech_recognition as sr
@@ -41,18 +41,21 @@ def recognize_command(c):
     if "open" in c.lower():
         if "open google" in c.lower():
             speech("Opening Google")
-            webbrowser.open("https://www.google.co.in/")
+            wb.open("https://www.google.co.in/")
         elif "open facebook" in c.lower():
             speech("Opening Google")
-            webbrowser.open("https://www.facebook.com/")
+            wb.open("https://www.facebook.com/")
         elif "open youtube" in c.lower():
             speech("Opening YouTube")
-            webbrowser.open("https://www.youtube.com/")
+            wb.open("https://www.youtube.com/")
     elif "play" in c.lower():
-        command = c.split(" ")
-        song = str(command[1]).lower()
-        if song in musicLibrary:
-            speech(f"Playing {song}")
-            webbrowser.open(website(song))
+        try:
+            command = c.split(" ")
+            song = str(command[1]).lower()
+            if song in musicLibrary:
+                speech(f"Playing {song}")
+                wb.open(website(song))
+        except Exception as e:
+            print(e)
     elif "news" in c.lower():
         news(api_key)
