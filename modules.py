@@ -3,6 +3,9 @@ import webbrowser as wb
 import requests
 import pyttsx3
 import speech_recognition as sr
+import pyautogui
+import time
+import pyperclip
 musicLibrary ={
     "soch": "https://www.youtube.com/watch?v=E8rpY2FwKkY&pp=ygUEc29jaA%3D%3D",
     "perfect": "https://www.youtube.com/watch?v=2Vv-BfVoq4g&pp=ygUHcGVyZmVjdA%3D%3D",
@@ -13,6 +16,7 @@ api_key = "faa878d35a854d73992101e344e81da6"
 
 recognizer = sr.Recognizer()
 engine = pyttsx3.init()
+
 
 def speech(text):
     engine.say(text)
