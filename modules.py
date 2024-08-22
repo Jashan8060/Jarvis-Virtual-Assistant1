@@ -19,7 +19,7 @@ musicLibrary ={
 }
 
 # Define your API key for the news API
-news_api_key = "faa878d35a854d73992101e344e81da6"
+news_api_key = " "
 
 #Initialize the speech recognition and text-to-speech engine
 recognizer = sr.Recognizer()
@@ -36,8 +36,7 @@ def recognize_speech_from_mic():
     Handles speech recognition from a microphone input.
     Keeps asking for input until successful.
     """
-    global recognizer
-    global microphone  
+    global recognizer  
     
     # Infinite Loop for Continuous Recognition:
     while True:
