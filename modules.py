@@ -155,7 +155,7 @@ def recognize_command(c):
         elif "edge" in c.lower(): #Working
             speech("Opening Microsoft edge")
             if sys.platform == 'win32':
-                subprocess.run(["C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"])
+                subprocess.run([r"C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"])
             elif sys.platform == 'darwin':
                 subprocess.run(['open', '-a', 'Safari'])#Choose platform appropriate command
             elif sys.platform == 'linux':
