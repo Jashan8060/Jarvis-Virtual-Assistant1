@@ -1,10 +1,10 @@
 # Jarvis - Personal Voice Assistant
 
-Jarvis is a personal voice assistant designed to perform various tasks based on voice commands. It can play music, fetch news, open applications, and interact with different web services. This project combines speech recognition, text-to-speech, and GUI automation to create a versatile and interactive assistant.
+Jarvis is a personal voice assistant designed to perform various tasks based on voice commands. It can play music, fetch news, open applications, and interact with different web services. This project combines speech recognition, text-to-speech, and GUI automation to create a versatile and interactive assistant, and can generate automatic responses via OpenAI for things it doesn't know.
 
 ## Project Structure
 1. main.py: The main entry point of the application. It listens for voice commands and interacts with the user.
-2. modules.py: Contains functions for handling specific tasks like playing music, fetching news, and opening applications.
+2. modules.py: Contains functions for handling specific tasks like playing music, fetching news, generating automatic respones and opening applications.
    
 ## Installation
 
@@ -28,6 +28,8 @@ $ pip install -r requirements.txt
 **5. pyperclip**
 
 **6. subprocess**
+
+**7. openai**
    
 ## Usage
 
@@ -63,7 +65,8 @@ _**Key Function**_
 3. **website(name)**: Returns the URL for a given song from the musicLibrary.
 4. **news(api_key**): Fetches and announces the latest news headlines using the provided API key.
 5. **placetrade()**: Automates placing a trade on TradingView based on user input.
-6. **recognize_command(c)**: Processes and executes commands such as opening websites, applications, and playing music.
+6. **autoresponse(c)**: Generates automatic response via OpenAI.
+7. **recognize_command(c)**: Processes and executes commands such as opening websites, applications, and playing music.
 
 ## Customization
 
@@ -89,7 +92,11 @@ elif "application_name" in c.lower():
 
 To configure the news API key, replace the placeholder in modules.py:
 
-` api_key = "your_api_key" `
+` news_api_key = "your_api_key" `
+
+To configure the openai API key, replace the placeholder in modules.py:
+
+` opneai_api_key = "your_api_key" `
 
 ### Adding New Applications
 
