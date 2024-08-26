@@ -8,6 +8,7 @@ import time  # For adding delays
 import pyperclip  # For clipboard operations
 import subprocess  # For running system commands
 import sys  # For system-specific parameters
+from openai import OpenAI # for generating automatic responses using open ai
 
 """Dictionary with music song names and their corresponding YouTube URLs
 Include more urls for more songs"""
@@ -20,6 +21,9 @@ musicLibrary ={
 
 # Define your API key for the news API
 news_api_key = " "
+
+# Define your API key for the openai API
+openai_api_key = " "
 
 #Initialize the speech recognition and text-to-speech engine
 recognizer = sr.Recognizer()
@@ -66,6 +70,23 @@ def website(name):
     """Get the URL for a given song from the music library"""
     url = musicLibrary.get(name)
     return url
+
+def autorespone(c):
+    client = OpenAI(api_key=openai_api_key)
+
+    completion = client.chat.completions.create(
+        model="gpt-4o-mini",
+        messages=[
+            {"role": "system", "content": "You are a Assistant named Jarvis. Response to the user in brief messages"},
+            {
+                "role": "user",
+                "content": c
+            }
+        ]
+    )
+
+    a = completion.choices[0].message
+    speech(a.content)
 
 def news(news_api_key):
     """Fetch and announce the top news headlines"""
@@ -190,6 +211,6 @@ def recognize_command(c):
     elif "news" in c.lower():
         news(news_api_key)
     
-    #Handle invalid commands
+    #For generating automatic responses using openai
     else:
-        speech("Please provide a valid command")
+        autorespone(c)
