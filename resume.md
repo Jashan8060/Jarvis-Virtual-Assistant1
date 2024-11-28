@@ -62,10 +62,7 @@ Graduated: 2019
 ## Achievements  
 - Attended Summer School Program at Glasgow Caledonian University, gaining global exposure in technical learning and networking.  
 
----
-
-## Extracurricular Activities  
-- Investigated economic impacts related to GDP, inflation, and buying power, showcasing analytical skills.  
+---  
 
 ---
 
