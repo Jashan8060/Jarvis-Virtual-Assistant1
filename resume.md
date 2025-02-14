@@ -55,7 +55,7 @@ Graduated: 2019
 - Implemented a user-friendly interface for restaurant and food item management.  
 
 **Fake News Detecting app (CS50 Project)** *(Ongoing)*  
-- Using NLP concept and python libraries such as spacy to identify misinformation.  
+- Developing an NLP-based system using Python & spaCy to analyze and detect misinformation.  
 
 ---
 
