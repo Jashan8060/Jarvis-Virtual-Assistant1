@@ -34,12 +34,12 @@ Graduated: 2019
 ---
 
 ## Skills  
-- **Programming Languages:** Python, C, Java (Proficient); C++ (Intermediate)  
-- **Web Development:** HTML, CSS, JavaScript  
+- **Programming Languages:** Python (Proficient), C (Intermediate) , Java (Proficient), C++ (Intermediate), Swift  
+- **Web Development:** HTML, CSS, JavaScript, php, Django, Flask  
 - **Networking Tools:** Packet Tracer (Cisco Networking)  
 - **Virtualization Tools:** VirtualBox, VMware  
 - **Technologies:** OpenAI API, News API, Speech Recognition, Speech-to-Text, OS Libraries  
-- **Tools:** SQLite, Git, Microsoft Access, Microsoft Excel, Xcode  
+- **Tools:** SQLite, Git, Microsoft Access, Microsoft Excel, Xcode, MySQL 
 - **Soft Skills:** Attention to detail, critical thinking, excellent written and verbal communication  
 
 ---
@@ -54,8 +54,8 @@ Graduated: 2019
 - Designed and developed an iOS app using SQLite for database management, demonstrating the ability to create scalable and efficient systems.  
 - Implemented a user-friendly interface for restaurant and food item management.  
 
-**Web Scraper (CS50 Project)** *(Ongoing)*  
-- Developing a Python-based scraper to extract and analyze data, showcasing skills in automation and data handling.  
+**Fake News Detecting app (CS50 Project)** *(Ongoing)*  
+- Using NLP concept and python libraries such as spacy to identify misinformation.  
 
 ---
 
